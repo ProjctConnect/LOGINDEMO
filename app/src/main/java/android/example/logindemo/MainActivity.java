@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText Name;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Info.setText("No of attempts remaining:"+String.valueOf(counter));
             if(counter==0){
                 Login.setEnabled(false);
+                Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show();
 
             }
         }
